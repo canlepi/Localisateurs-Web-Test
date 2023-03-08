@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20230308 00:09:53.967" rpa="false" schemaversion="3">
+<suite id="s1" name="Test1" source="c:\Users\canle\OneDrive\Escritorio\Localisateur-Web-Test\test1.robot">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Debut du test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230308 00:09:54.082" endtime="20230308 00:09:54.083"/>
+</kw>
+<test id="s1-t1" name="TestCase1" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230308 00:09:54.084" level="INFO">Opening browser 'chrome' to base url 'https://canlepi.github.io/Localisateurs-Web/'.</msg>
+<status status="PASS" starttime="20230308 00:09:54.083" endtime="20230308 00:09:55.890"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230308 00:09:55.890" endtime="20230308 00:09:56.008"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 00:09:59.009" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230308 00:09:56.009" endtime="20230308 00:09:59.009"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,1200)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230308 00:09:59.010" level="INFO">Executing JavaScript:
+window.scrollTo(0,1200)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230308 00:09:59.009" endtime="20230308 00:09:59.015"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 00:10:02.017" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230308 00:09:59.015" endtime="20230308 00:10:02.017"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230308 00:10:02.022" level="INFO">Executing JavaScript:
+window.scrollTo(0,-document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230308 00:10:02.017" endtime="20230308 00:10:02.032"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 00:10:05.037" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230308 00:10:02.034" endtime="20230308 00:10:05.037"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://section[@id="debut"]/div/header/div/i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 00:10:05.037" level="INFO">Clicking element 'xpath://section[@id="debut"]/div/header/div/i'.</msg>
+<status status="PASS" starttime="20230308 00:10:05.037" endtime="20230308 00:10:05.119"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 00:10:08.119" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230308 00:10:05.119" endtime="20230308 00:10:08.119"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://nav[@id='nav']/a[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 00:10:08.121" level="INFO">Clicking element 'xpath://nav[@id='nav']/a[4]'.</msg>
+<status status="PASS" starttime="20230308 00:10:08.120" endtime="20230308 00:10:08.163"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 00:10:11.165" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230308 00:10:08.164" endtime="20230308 00:10:11.165"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230308 00:10:11.166" level="INFO">Executing JavaScript:
+window.scrollTo(0,document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230308 00:10:11.165" endtime="20230308 00:10:11.172"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 00:10:14.177" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230308 00:10:11.172" endtime="20230308 00:10:14.177"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230308 00:10:14.180" endtime="20230308 00:10:17.141"/>
+</kw>
+<status status="PASS" starttime="20230308 00:09:54.083" endtime="20230308 00:10:17.141"/>
+</test>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Fin du test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230308 00:10:17.141" endtime="20230308 00:10:17.141"/>
+</kw>
+<doc>Executer un test automatisé sur un site web</doc>
+<status status="PASS" starttime="20230308 00:09:53.972" endtime="20230308 00:10:17.141"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
